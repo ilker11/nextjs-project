@@ -4,8 +4,12 @@ import { SectionContainer, SectionBigHeading,SectionHeading, SectionSubheading }
 export const StyledContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
   display: block;
   padding: 6rem 0;
-  background: url(/img/background.png) no-repeat -5rem 15rem;
-  background-size: 100%;
+  background: url(/img/background.png) no-repeat 1.2rem 15.7rem;
+  background-size: 70%;
+  @media(max-width: 1024px) {
+    background-size: 86%;
+    background-position: 93% 26%;
+  }
 `;
 
 export const StyledSectionHead = styled(({ ...props }) => <header {...props} />)`
@@ -25,7 +29,6 @@ export const StyledDescription = styled((props) => <SectionSubheading {...props}
 
 export const StyledMediaContainer = styled(({ ...props }) => <div {...props} />)`
   display: flex;
-  align-items: center;
   padding: 0 17rem;
   @media(max-width: 1024px) {
     display: block;
@@ -39,18 +42,18 @@ export const StyledMediaImage = styled(({ ...props }) => <div {...props} />)`
     box-sizing: border-box;
     display: block;
     overflow: hidden;
-    width: 425px;
-    height: 675px;
-    margin-left: 13rem;
+    width: 292px;
+    height: 468px;
+    margin-left: 20rem;
     padding: 0;
     border-radius: 10px;
   }
 `;
 
 export const StyledMediaBody = styled(({ ...props }) => <div {...props} />)`
-  flex: 0 0 62%;
+  flex: 0 0 50%;
   padding: 2rem 5rem;
   @media(max-width: 1024px) {
-    padding: 3rem 10rem;
+    padding: 3rem 16rem;
   }
 `;
