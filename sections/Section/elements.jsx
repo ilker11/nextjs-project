@@ -10,11 +10,19 @@ export const StyledContainer = styled(({ height, ...props }) => <SectionContaine
     background-size: 86%;
     background-position: 93% 26%;
   }
+  @media(max-width: 600px) {
+    margin-left: 1rem;
+    background-size: 96%;
+  }
 `;
 
 export const StyledSectionHead = styled(({ ...props }) => <header {...props} />)`
   text-align: center;
   margin-bottom: 2.5rem;
+  @media(max-width: 600px) {
+    margin-left: 3rem;
+    width: 100%;
+  }
 `;
 
 export const StyledTitle = styled((props) => <SectionHeading {...props} />)`
@@ -48,6 +56,9 @@ export const StyledMediaImage = styled(({ ...props }) => <div {...props} />)`
     padding: 0;
     border-radius: 10px;
   }
+  @media(max-width: 600px) {
+    margin-left: 4rem;
+  }
 `;
 
 export const StyledMediaBody = styled(({ ...props }) => <div {...props} />)`
@@ -55,5 +66,8 @@ export const StyledMediaBody = styled(({ ...props }) => <div {...props} />)`
   padding: 2rem 5rem;
   @media(max-width: 1024px) {
     padding: 3rem 16rem;
+  }
+  @media(max-width: 600px) {
+    padding: 3rem 0rem;
   }
 `;
