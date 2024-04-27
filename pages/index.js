@@ -13,23 +13,24 @@ const sectionProps = {
   title: "Managed agency selection",
   description: "Strengthen your onboarding process",
   cards: [
-    {
-      icon: "/img/brief.png",
-      title: "<strong>Brief</strong>",
-      description: "Complete <strong>brief writing for simple guidance</strong> on what to include, we've got you covered",
-    },
-    {
-      icon: "/img/search.png",
-      title: "<strong>Search</strong>",
-      description: "In-depth agency search covering;<strong>criteria matching,</strong> door knocking and due-dilligence vetting.",
-    },
-    {
-      icon: "/img/pitch.png",
-      title: "<strong>Pitch</strong>",
-      description: "Comprehensive <strong>pitch management,</strong> including comms, diary management and pitch hosting.",
-    }
+      {
+          icon: "/img/brief.png",
+          title: "<strong>Brief</strong>",
+          description: "Complete <strong>brief writing for simple guidance</strong> on what to include, we've got you covered",
+      },
+      {
+          icon: "/img/search.png",
+          title: "<strong>Search</strong>",
+          description: "In-depth agency search covering;<strong>criteria matching,</strong> door knocking and due-dilligence vetting.",
+      },
+      {
+          icon: "/img/pitch.png",
+          title: "<strong>Pitch</strong>",
+          description: "Comprehensive <strong>pitch management,</strong> including comms, diary management and pitch hosting.",
+      }
   ]
 };
+
 
 export default function Home() {
   return (
