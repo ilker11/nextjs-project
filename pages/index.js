@@ -43,7 +43,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </head>
-      <div>
+      <div className="wrapper">
         <Hero {...heroProps} />
         {/** Other sections */}
         <Section {...sectionProps} />

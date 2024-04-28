@@ -28,3 +28,9 @@ p {
   padding: 0;
   line-height: 1;
 }
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}

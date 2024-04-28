@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import {
     StyledContainer,
     StyledSectionHead,
@@ -16,12 +15,19 @@ export const Section = ({ image, title, description, cards, ...props }) => {
         <StyledContainer {...props}>
             <StyledSectionHead>
                 <StyledTitle>{title}</StyledTitle>
+
                 <StyledDescription>{description}</StyledDescription>
             </StyledSectionHead>
 
             <StyledMediaContainer>
                 <StyledMediaImage>
-                    <Image layout="responsive" src={image.src} alt={image.alt} width={image.width} height={image.height} />
+                    <Image 
+                        layout="responsive" 
+                        src={image.src} 
+                        alt={image.alt} 
+                        width={image.width} 
+                        height={image.height} 
+                    />
                 </StyledMediaImage>
 
                 <StyledMediaBody>
